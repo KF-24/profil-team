@@ -38,9 +38,6 @@ header {
 
 .logo {
   width: 72px;
-  height: 72px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .logo-menu {
@@ -49,12 +46,9 @@ header {
 
 .header-left {
   float: left;
-
 }
 
 .header-right {
-  margin-bottom:10px ;
-  float: right;
 }
 
 .header-right a {
@@ -62,6 +56,7 @@ header {
   padding: 0 25px;
   color: white;
   display: block;
+  float: left;
   transition: all 0.5s;
 }
 
