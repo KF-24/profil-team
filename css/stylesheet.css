@@ -1,0 +1,404 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lucida Grande";
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa {
+    display: inline-block;
+}
+
+.container {
+  /*max-width: 1348px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 8px auto;*/
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+header {
+  height: 72px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo-menu {
+  float: right;
+}
+
+.header-left {
+  float: left;
+
+}
+
+.header-right {
+  margin-bottom:10px ;
+  float: right;
+}
+
+.header-right a {
+  line-height: 50px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: rgba(34, 49, 52, 0.9);
+    text-decoration: none;
+    margin:0 5px;
+    border-radius: 10px;
+}
+
+li:hover a {
+    background: #19c589;
+}
+
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+li:hover ul a:hover {
+    background: #19c589;
+    color: #fff;
+}
+
+li ul {
+    display: none;
+}
+
+li ul li {
+    display: block;
+    float: none;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(34, 49, 52, 0.9);
+    text-align: center;
+    display: none;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+.top-wrapper {
+  padding: 150px 0 150px 0;
+  background-image: url(../image/applemouse.jpg);
+  background-size: cover;
+  color: white;
+  text-align: left;
+}
+
+.top-wrapper .container{
+  margin-top:100px;
+  margin-bottom:100px;
+  text-align: center ;
+}
+
+.top-wrapper h1 {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  margin-bottom: 3px;
+}
+
+.container span {
+  font-size: 20px;
+}
+
+.digitalent {
+  background-color:#2F4F4F;
+}
+
+.progate {
+  background-color: #2F4F4F;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.about-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.abouts .heading h2{
+  padding-top:72px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about{
+  float: left;
+  width: 100%;
+  font-family:sans-serif;
+}
+
+.about-icon {
+  position: relative;
+}
+
+.about-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+
+
+.about .btn {
+  padding: 5px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.about .btn:hover {
+  opacity: 1;
+}
+
+.facebook{
+  background-color: #0fa88a;
+  color: #fff;
+} 
+
+.twitter{
+  background-color: #0fa88a;
+  color: #fff;
+}  
+
+.instagram{
+  background-color: #0fa88a;
+  color: #fff;
+}  
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+/* Tambahkan CSS untuk menu-icon */
+.menu-icon {
+  color: white;
+  font-size: 26px;
+  padding: 21px 0;
+  display:  none;
+}
+
+.footer {
+  background-color: rgba(34, 49, 52, 0.9);
+  color: #fff;
+  height: 68px;
+}
+
+
+.footer-logo {
+  float: left;
+  color: white;
+  font-weight: bold;
+  line-height: 68px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons {
+  float: right;
+}
+
+.social-icons a {
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
+    transition: 0.2s;
+    line-height: 68px;
+}
+
+/* css miftach*/
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p{
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+
+
+.main {
+  padding: 100px 80px;
+}
+
+.copy-container h1 {
+  font-size: 140px;
+}
+
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+.contents {
+  height: 500px;
+  margin-top: 100px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 40px;
+}
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+
+input, textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid;
+  border-color: #dee7ec;
+}
+
+.contact-submit {
+ background-color: #dee7ec;
+ color: #889eab;
+}
+
+
