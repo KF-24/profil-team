@@ -212,11 +212,7 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
+
 
 /* Tambahkan CSS untuk menu-icon */
 .menu-icon {
@@ -226,11 +222,7 @@ input[type=checkbox]:checked ~ #menu{
   display:  none
 }
 
-.footer {
-  background-color: rgba(34, 49, 52, 0.9);
-  color: #fff;
-  height: 68px;
-}
+
 
 .footer-logo {
   float: left;
@@ -239,6 +231,13 @@ input[type=checkbox]:checked ~ #menu{
   line-height: 68px;
   margin: 0;
   padding: 0;
+}
+footer {
+    position: relative;
+    margin-top: 48px;
+    height: 68px;
+    clear: both;
+    background-color: rgba(34, 49, 52, 0.9);
 }
 
 .social-icons {
