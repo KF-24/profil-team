@@ -78,7 +78,7 @@ li a {
     line-height: 50px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff;
-    background: transparent;
+    background: rgba(34, 49, 52, 0.9);
     text-decoration: none;
 }
 
@@ -189,12 +189,28 @@ input[type=checkbox]:checked ~ #menu{
 }
 
 .lesson-wrapper {
+  height: 500px;
   padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
 }
+.lesson {
+  float: left;
+  width: 20%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+
 
 .message-wrapper {
   border-bottom: 1px solid #eee;
