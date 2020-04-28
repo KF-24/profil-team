@@ -85,4 +85,8 @@
   border: 1px solid;
   border-color: #dee7ec;
 }
+  
+  .btn .instagram {
+    margin: 8px 0px;
+  }
 }
